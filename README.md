@@ -8,43 +8,49 @@ In this project I haved used exploratory data analysis to generate insights for 
 
 Microsoft sees all the big companies creating original video content and they want to get in on the fun. They have decided to create a new movie studio, but they don’t know anything about creating movies. You are charged with exploring what types of films are currently doing the best at the box office. You must then translate those findings into actionable insights that the head of Microsoft's new movie studio can use to help decide what type of films to create.
 
-### The Data
+#### The Data
 I have used the data in the files
 
 * imdb.title.basics
 * imdb.title.ratings
 * bom.movie_gross
 
-## Deliverables
+##### Data cleaning
+I perfomed data cleanig process on the 3 files provided. I dealt with the missing values and the duplicates. I also dropped the irrelevant columns. After the data was clean to my satsfaction I went on to analyse it.
 
-There are three deliverables for this project:
+###### Exploratory Data Analysis / Data Visualization
+I Used the Combined gross to find the most profitable genres, which turned out to be:Action-Sci-Fi, Adventure-Comedy , Action-Comedy ,Action-Animation, Action-Thriller  and Action-Fantasy.
+I then plotted this using a bar graph.
 
-* A **GitHub repository**
-* A **Jupyter Notebook**
-* A **non-technical presentation**
+#MOST PROFITABLE GENRE
 
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic for instructions on creating and submitting your deliverables. Refer to the rubric associated with this assignment for specifications describing high-quality deliverables.
+![Genre vs Total gross](https://github.com/cpakobia/PHASE_ONE-_PROJECT_dennis_kobia/assets/134348870/406fa005-78b2-43a6-b3fe-48667834a6a6)
 
-### Key Points
 
-* **Your analysis should yield three concrete business recommendations.** The ultimate purpose of exploratory analysis is not just to learn about the data, but to help an organization perform better. Explicitly relate your findings to business needs by recommending actions that you think the business (Microsoft) should take.
+#RELATIONSHIP BETWEEN GENRE AND RATING
 
-* **Communicating about your work well is extremely important.** Your ability to provide value to an organization - or to land a job there - is directly reliant on your ability to communicate with them about what you have done and why it is valuable. Create a storyline your audience (the head of Microsoft's new movie studio) can follow by walking them through the steps of your process, highlighting the most important points and skipping over the rest.
+![Genre vs Rating Bar Graph](https://github.com/cpakobia/PHASE_ONE-_PROJECT_dennis_kobia/assets/134348870/ec724aca-411b-4242-b226-f5543f6ad97b)
+From this Bar Graph we can see DramaWestern has the highest rating, ActionThriller is second in rating, while AdventureDramaSci-Fi is the 3rd most rated tying with Documentary and ActionDrama genres
 
-* **Use plenty of visualizations.** Visualizations are invaluable for exploring your data and making your findings accessible to a non-technical audience. Spotlight visuals in your presentation, but only ones that relate directly to your recommendations. Simple visuals are usually best (e.g. bar charts and line graphs), and don't forget to format them well (e.g. labels, titles).
 
-## Getting Started
+#Scatter plot to show relationship between Combined_gross_income and Average rating
 
-Please start by reviewing this assignment, the rubric at the bottom of it, and the "Project Submission & Review" page. If you have any questions, please ask your instructor ASAP.
+![Rating vs Total gross Scatterplot](https://github.com/cpakobia/PHASE_ONE-_PROJECT_dennis_kobia/assets/134348870/1ac20f63-4f69-410e-a5f7-2a8af1802d8e)
+From the above Scatter plot there is no clear relationship between the Combined_gross_income and the average rating. This shows the rating of a Film doesnt necessarily affect the revevue of the film
 
-Next, we recommend you check out [the Phase 1 Project Templates and Examples repo](https://github.com/learn-co-curriculum/dsc-project-template) and use the MVP template for your project.
 
-Alternatively, you can fork [the Phase 1 Project Repository](https://github.com/learn-co-curriculum/dsc-phase-1-project), clone it locally, and work in the `student.ipynb` file. Make sure to also add and commit a PDF of your presentation to your repository with a file name of `presentation.pdf`.
+#Lineplot showing the Relationship between the domestic gross and foreign gross income from the Year of release
 
-## Project Submission and Review
+![Domestic gross and Foreign gross](https://github.com/cpakobia/PHASE_ONE-_PROJECT_dennis_kobia/assets/134348870/e8bf7b2a-6aee-4d7c-b341-152206d323d4)
+Over the years, it can be observed that the foreign gross income of movies often surpasses their domestic gross income upon release. In 2018, movies achieved their highest earnings in both foreign and domestic markets. However, there was a significant drop in gross incomes for films released in 2019, which can be attributed to the growing preference of many individuals to utilize streaming services instead of visiting theaters.
 
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic to learn how to submit your project and how it will be reviewed. Your project must pass review for you to progress to the next Phase.
 
-## Summary
+#######Conclusions and Recommendations.
 
-This project will give you a valuable opportunity to develop your data science skills using real-world data. The end-of-phase projects are a critical part of the program because they give you a chance to bring together all the skills you've learned, apply them to realistic projects for a business stakeholder, practice communication skills, and get feedback to help you improve. You've got this!
+#CONCLUSION:
+
+The genres of most of the Films that have been produced are drama,romance, comedy,sci -fi and action.The least released are sport documentary,comedy documentary and history films. Based on our analysis above the success of a film is determined mostly by the genre.The most profitable films are action adventure,action sci-fi, action comedy and action thriller.The average rating does not affect the sales of a film.From the above analysis we see documentary having a high average rating but it is has a low total gross income. Hence we ascertain that their is no clear relationship between the total gross income and the average rating.It is of importance to note that the foreign market has returned a high gross from the year of release compared to the domestic market.
+
+#RECOMMENDATIONS:
+
+Microsoft should consider venturing on action adventure,action sci-fi, action comedy and action thriller films. Microsoft should focus on exploring more the international markets which have had a higher gross over the years when compared to the domestic markets.
